@@ -985,7 +985,7 @@ int c2AABBtoAABB(c2AABB A, c2AABB B)
 	int d1 = A.max.x < B.min.x;
 	int d2 = B.max.y < A.min.y;
 	int d3 = A.max.y < B.min.y;
-	return !(d0 | d1 | d2 | d3);
+	return !(d0 | d1 | d2 | d3);//What is this? It Passes back a number..
 }
 
 // see: http://www.randygaul.net/2014/07/23/distance-point-to-line-segment/
